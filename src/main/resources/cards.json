@@ -1,0 +1,421 @@
+{
+  "cards": [
+    {
+      "name": "Wall",
+      "price": {
+        "amount": 1,
+        "resource": "bricks"
+      },
+      "effects": [
+        {
+          "type": "changeOwnFence",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Base",
+      "price": {
+        "amount": 1,
+        "resource": "bricks"
+      },
+      "effects": [
+        {
+          "type": "reinforceOwnCastle",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Defence",
+      "price": {
+        "amount": 3,
+        "resource": "bricks"
+      },
+      "effects": [
+        {
+          "type": "changeOwnFence",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "Reserve",
+      "price": {
+        "amount": 3,
+        "resource": "bricks"
+      },
+      "precondition": {
+        "fenceHeight": 4
+      },
+      "effects": [
+        {
+          "type": "reinforceOwnCastle",
+          "amount": 8
+        },
+        {
+          "type": "changeOwnFence",
+          "amount": -4
+        }
+      ]
+    },
+    {
+      "name": "Tower",
+      "price": {
+        "amount": 5,
+        "resource": "bricks"
+      },
+      "effects": [
+        {
+          "type": "reinforceOwnCastle",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "School",
+      "price": {
+        "amount": 8,
+        "resource": "bricks"
+      },
+      "effects": [
+        {
+          "type": "addGenerator",
+          "generatorType": "builders",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Wain",
+      "price": {
+        "amount": 10,
+        "resource": "bricks"
+      },
+      "effects": [
+        {
+          "type": "reinforceOwnCastle",
+          "amount": 8
+        },
+        {
+          "type": "damageEnemyCastle",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Fence",
+      "price": {
+        "amount": 12,
+        "resource": "bricks"
+      },
+      "effects": [
+        {
+          "type": "changeOwnFence",
+          "amount": 22
+        }
+      ]
+    },
+    {
+      "name": "Fort",
+      "price": {
+        "amount": 18,
+        "resource": "bricks"
+      },
+      "effects": [
+        {
+          "type": "reinforceOwnCastle",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Babylon",
+      "price": {
+        "amount": 39,
+        "resource": "bricks"
+      },
+      "effects": [
+        {
+          "type": "reinforceOwnCastle",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Archer",
+      "price": {
+        "amount": 1,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "damageEnemy",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Knight",
+      "price": {
+        "amount": 2,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "damageEnemy",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Rider",
+      "price": {
+        "amount": 2,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "damageEnemy",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Platoon",
+      "price": {
+        "amount": 4,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "damageEnemy",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "Recruit",
+      "price": {
+        "amount": 8,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "addGenerator",
+          "generatorType": "soldiers",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Attack",
+      "price": {
+        "amount": 10,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "damageEnemy",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "name": "Saboteur",
+      "price": {
+        "amount": 12,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "destroyEnemyResource",
+          "resourceType": "all",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Thief",
+      "price": {
+        "amount": 15,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "stealEnemyResources",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Swat",
+      "price": {
+        "amount": 18,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "damageEnemyCastle",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Banshee",
+      "price": {
+        "amount": 28,
+        "resource": "weapons"
+      },
+      "effects": [
+        {
+          "type": "damageEnemy",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Conjure bricks",
+      "price": {
+        "amount": 4,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "createResource",
+          "resourceType": "bricks",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Conjure crystals",
+      "price": {
+        "amount": 4,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "createResource",
+          "resourceType": "crystals",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Conjure weapons",
+      "price": {
+        "amount": 4,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "createResource",
+          "resourceType": "weapons",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Crush weapons",
+      "price": {
+        "amount": 4,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "destroyEnemyResource",
+          "resourceType": "weapons",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Crush bricks",
+      "price": {
+        "amount": 4,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "destroyEnemyResource",
+          "resourceType": "bricks",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Crush crystals",
+      "price": {
+        "amount": 4,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "destroyEnemyResource",
+          "resourceType": "crystals",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Sorcerer",
+      "price": {
+        "amount": 8,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "addGenerator",
+          "generatorType": "magic",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Dragon",
+      "price": {
+        "amount": 21,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "damageEnemy",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "Pixies",
+      "price": {
+        "amount": 22,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "reinforceOwnCastle",
+          "amount": 22
+        }
+      ]
+    },
+    {
+      "name": "Curse",
+      "price": {
+        "amount": 45,
+        "resource": "crystals"
+      },
+      "effects": [
+        {
+          "type": "addGenerator",
+          "generatorType": "all",
+          "amount": 1
+        },
+        {
+          "type": "removeEnemyGenerator",
+          "generatorType": "all",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}
