@@ -71,11 +71,40 @@ class CardMechanics {
         }
     }
 
-    def destroyEnemyResource(def params) {}
+    def destroyEnemyResource(def params) {
+        if (params.resourceType == 'all') {
+            enemy.resources.each { r ->
+                if (r.value < params.amount) {
+                    r.value = 0
+                } else {
+                    r.value -= params.amount
+                }
+            }
+        } else {
+            if (enemy.resources[params.resourceType] < params.amount) {
+                enemy.resources[params.resourceType] = 0
+            } else {
+                enemy.resources[params.resourceType] -= params.amount
+            }
+        }
+    }
 
-    def stealEnemyResources(def params) {}
+    def stealEnemyResources(def params) {
+        enemy.resources.each { r ->
+            if (r.value < params.amount) {
+                activePlayer.resources[r.key] += r.value
+                r.value = 0
+            } else {
+                r.value -= params.amount
+                activePlayer.resources[r.key] += r.value
+            }
+        }
 
-    def createResource(def params) {}
+    }
+
+    def createResource(def params) {
+        activePlayer.resources[params.resourceType] += params.amount
+    }
 
 
 }
